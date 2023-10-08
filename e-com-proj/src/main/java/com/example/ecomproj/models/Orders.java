@@ -24,7 +24,7 @@ public class Orders {
     @JoinColumn
     private User user;
 
-    @ManyToMany
+    @OneToMany
     @JoinColumn
     private List<Product> products = new ArrayList<>();
 }
